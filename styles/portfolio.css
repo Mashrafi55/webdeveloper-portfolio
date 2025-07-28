@@ -134,7 +134,7 @@ main section{
     justify-content: space-around;
 }
 .border{
-    border: 2px solid #757575;
+    border: 1px solid #c4c0c0;
     border-radius: 5px;
     background-color: #FFF8F3;
     padding: 0px 5px;
@@ -228,4 +228,27 @@ footer textarea{
     padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
+}
+
+/* responsive media query */
+.hide{
+    display: none;
+}
+@media screen and (max-width: 576px) {
+    .skill-container, .resume-container, footer, .about-items{
+        flex-direction: column;
+    }
+    footer, .about{
+        padding: 20px;
+    }
+    .footer-column{
+    width: 100%;
+}
+footer input[type="text"], footer input[type="email"]{
+    width: calc(100% - 40px);
+}
+footer textarea{
+    width: calc(100% - 40px);
+}
+
 }
